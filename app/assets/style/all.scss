@@ -4,7 +4,7 @@
 @import 'base/font';
 
 * {
-    outline: 1px solid green;
+    // outline: 1px solid green;
 }
 body {
     // font-family: 'Oswald', sans-serif;
@@ -13,25 +13,24 @@ body {
 }
 
 .container {
-    width: 1280px;
+    // max-width: 1280px;
     margin: 0 auto;
     padding: 80px 85px;
     background: #f0f0f0 0% 0% no-repeat padding-box;
     color: #2eb738;
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .firstBox {
     width: 350px;
-    // height: 366px;
-}
-
-.box {
-    width: 350px;
-    // height: 366px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 10px #d8d8d8;
-    border-radius: 100px 0px 30px 0px;
-    padding: 64px 40px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
@@ -50,7 +49,7 @@ body {
 
 .title {
     &-area {
-        margin: 75px auto;
+        // margin: 75px auto;
         text-align: center;
     }
     &-h1 {
@@ -62,27 +61,32 @@ body {
         line-height: 1.5;
     }
 }
-
-.box-left,
-.box-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+.box {
+    width: 350px;
+    height: 350px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #d8d8d8;
+    border-radius: 100px 0px 30px 0px;
+    padding: 60px 30px 60px 50px;
+    margin-bottom: 40px;
     justify-content: space-between;
-    // align-items: center;
     .box-title {
-        font-size: 93px;
+        font-size: 104px;
         // line-height: 1;
         font-weight: bold;
         border: 2px solid #ffffff;
         text-shadow: 4px 3px 0px #f0f0f0;
-        text-align: center;
+        // text-align: center;
+        padding-left: 20px;
         // font-family: 'Oswald', sans-serif;
+        // margin-right: 60px;
     }
     .box-text {
         // text-align: center;
+        width: 50%;
         font-size: 24px;
-        letter-spacing: 7px;
+        // letter-spacing: 7px;
         margin-top: 8px;
+        // margin-right: 20px;
     }
 }
