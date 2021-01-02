@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+#注意不是只有這一種CSS reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  /*這行是為了RWD多加的*/
+  max-width: 100%;
+  height: auto; }
+
+/*以上是css reset*/
+/*以下是確保盒模型不會破版*/
+/* 全域 border box */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.d-flex {
+  display: flex; }
+
+.flex-column {
+  flex-direction: column; }
+
+.flex-row {
+  flex-direction: row; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.m-0 {
+  margin: 0px !important; }
+
+.w-100 {
+  width: 100%; }
+
+body {
+  font-family: Arial, 'Microsoft JhengHei', Helvetica, sans-serif; }
+
+.container {
+  margin: 0 auto;
+  padding: 80px 85px;
+  background: #f0f0f0 0% 0% no-repeat padding-box;
+  color: #2eb738;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.firstBox {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+
+.hr-style {
+  border: 0px;
+  position: relative; }
+  .hr-style::after {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #2eb738;
+    top: 50%;
+    left: 0;
+    right: 0; }
+
+.title-area {
+  text-align: center; }
+
+.title-h1 {
+  font-size: 56px;
+  line-height: 1.5; }
+
+.title-text {
+  font-size: 24px;
+  line-height: 1.5; }
+
+.box {
+  width: 350px;
+  height: 350px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #d8d8d8;
+  border-radius: 100px 0px 30px 0px;
+  padding: 60px 30px 60px 50px;
+  margin-bottom: 40px;
+  justify-content: space-between; }
+  .box .box-title {
+    font-size: 104px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    text-shadow: 4px 3px 0px #f0f0f0;
+    padding-left: 20px; }
+  .box .box-text {
+    width: 50%;
+    font-size: 24px;
+    margin-top: 8px; }
+
+/*# sourceMappingURL=all.css.map */
