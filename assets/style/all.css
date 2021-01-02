@@ -80,6 +80,7 @@ body {
   font-family: Arial, 'Microsoft JhengHei', Helvetica, sans-serif; }
 
 .container {
+  max-width: 1440px;
   margin: 0 auto;
   padding: 80px 85px;
   background: #f0f0f0 0% 0% no-repeat padding-box;
